@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import Footer from '../Components/Footer'
 import Nav from '../Components/Nav'
-import {$} from "react-jquery-plugin"
+import {$} from "jquery"
 function Home() {
    
     
@@ -100,69 +100,7 @@ function Home() {
               </div>
               <div className="section-padding"></div>
           </div>
-          
-          {/* <!-- Choose Accessories --> */}
-          <div id="accessories-section" className="accessories-section container-fluid no-padding">
-              <div className="section-padding"></div>
-              <div className="accessories-img-box col-md-6">
-                  <div className="tab-content">
-                      <div role="tabpanel" className="tab-pane active" id="wheels">
-                          <div className="accessories-img img1"></div>
-                      </div>
-                      <div role="tabpanel" className="tab-pane" id="lure">
-                          <div className="accessories-img img2"></div>
-                      </div>
-                      <div role="tabpanel" className="tab-pane" id="lines">
-                          <div className="accessories-img img3"></div>
-                      </div>
-                      <div role="tabpanel" className="tab-pane" id="rods">
-                          <div className="accessories-img img4"></div>
-                      </div>
-                      <div role="tabpanel" className="tab-pane" id="bags">
-                          <div className="accessories-img img5"></div>
-                      </div>
-                      <div role="tabpanel" className="tab-pane" id="wheels1">
-                          <div className="accessories-img img1"></div>
-                      </div>
-                  </div>			
-              </div>
-              
-              <div className="col-md-7 accessories-tab-box">
-                  {/* <!-- Section Header --> */}
-                  <div className="section-header">
-                      <h3>Choose Your accessories</h3>
-                      <p>Shop By Categories</p>
-                  </div>
-                  
-                  <div className="nav nav-tabs" role="tablist">
-                      <a href="#wheels" aria-controls="wheels" role="tab" data-toggle="tab" className="active">
-                          <i><img src="assets/images/accessories/accessories-ic1.png" alt="Accessories Icon" /></i>
-                          <span>Fishing wheels</span>
-                      </a>
-                      <a href="#lure" aria-controls="lure" role="tab" data-toggle="tab">
-                          <i><img src="assets/images/accessories/accessories-ic2.png" alt="Accessories Icon" /></i>
-                          <span>Fishing lure</span>
-                      </a>
-                      <a href="#lines" aria-controls="lines" role="tab" data-toggle="tab">
-                          <i><img src="assets/images/accessories/accessories-ic3.png" alt="Accessories Icon" /></i>
-                          <span>Fishing lines</span>
-                      </a>
-                      <a href="#rods" aria-controls="rods" role="tab" data-toggle="tab">
-                          <i><img src="assets/images/accessories/accessories-ic4.png" alt="Accessories Icon" /></i>
-                          <span>Fishing rods</span>
-                      </a>
-                      <a href="#bags" aria-controls="bags" role="tab" data-toggle="tab">
-                          <i><img src="assets/images/accessories/accessories-ic5.png" alt="Accessories Icon" /></i>
-                          <span>Fishing bags</span>
-                      </a>
-                      <a href="#wheels1" aria-controls="wheels1" role="tab" data-toggle="tab">
-                          <i><img src="assets/images/accessories/accessories-ic1.png" alt="Accessories Icon" /></i>
-                          <span>Fishing wheels</span>
-                      </a>
-                  </div>
-              </div>
-              <div className="section-padding"></div>
-          </div>
+        
           
           {/* <!-- WhyChoose Us Section --> */}
           <div id="whychooseus" className="container-fluid no-padding whychoose-section">
@@ -413,7 +351,7 @@ function Home() {
                   <div className="row">
                       {/* <!-- Product Carousel --> */}
                       <div className="product-carousel">
-                          <div className="col-md-12">
+                          <div className="col-md-3">
                               <div className="product-block">
                                   <span className="new" title="New">New</span>
                                   <a href="#" className="product-wish pull-right" title="Add Wish"><i className="fa fa-heart-o"></i></a>
@@ -436,7 +374,7 @@ function Home() {
                                   </div>
                               </div>
                           </div>
-                          <div className="col-md-12">
+                          <div className="col-md-3">
                               <div className="product-block">
                                   <span className="new" title="New">New</span>
                                   <a href="#" className="product-wish pull-right" title="Add Wish"><i className="fa fa-heart-o"></i></a>
@@ -459,7 +397,7 @@ function Home() {
                                   </div>
                               </div>
                           </div>
-                          <div className="col-md-12">
+                          <div className="col-md-3">
                               <div className="product-block">
                                   <span className="sale" title="New">Sale</span>
                                   <a href="#" className="product-wish pull-right" title="Add Wish"><i className="fa fa-heart-o"></i></a>
@@ -482,7 +420,7 @@ function Home() {
                                   </div>
                               </div>
                           </div>
-                          <div className="col-md-12">
+                          <div className="col-md-3">
                               <div className="product-block">
                                   <span className="new" title="New">New</span>
                                   <a href="#" className="product-wish pull-right" title="Add Wish"><i className="fa fa-heart-o"></i></a>
@@ -524,7 +462,7 @@ function Home() {
                   <div className="row">
                       {/* <!-- Product Carousel --> */}
                       <div className="testimonial-carousel">
-                          <div className="col-md-12">	
+                          <div className="col-md-6">	
                               <div className="testimonial-block">
                                   <div className="testimonial-content">
                                       <img src="assets/images/testimonial/testimonial1.jpg" alt="testimonial1"/>							
@@ -533,7 +471,7 @@ function Home() {
                                   <p>Chris mikaale -<span> Happy Customer</span></p>
                               </div>
                           </div>
-                          <div className="col-md-12">	
+                          <div className="col-md-6">	
                               <div className="testimonial-block">
                                   <div className="testimonial-content">
                                       <img src="assets/images/testimonial/testimonial2.jpg" alt="testimonial1"/>							
@@ -542,7 +480,7 @@ function Home() {
                                   <p>Merlen brando  -<span> Happy Customer</span></p>
                               </div>
                           </div>
-                          <div className="col-md-12">	
+                          <div className="col-md-6">	
                               <div className="testimonial-block">
                                   <div className="testimonial-content">
                                       <img src="assets/images/testimonial/testimonial1.jpg" alt="testimonial1"/>							
@@ -551,7 +489,7 @@ function Home() {
                                   <p>Chris mikaale -<span> Happy Customer</span></p>
                               </div>
                           </div>
-                          <div className="col-md-12">	
+                          <div className="col-md-6">	
                               <div className="testimonial-block">
                                   <div className="testimonial-content">
                                       <img src="assets/images/testimonial/testimonial2.jpg" alt="testimonial1"/>							
@@ -560,7 +498,7 @@ function Home() {
                                   <p>Merlen brando  -<span> Happy Customer</span></p>
                               </div>
                           </div>
-                          <div className="col-md-12">	
+                          <div className="col-md-6">	
                               <div className="testimonial-block">
                                   <div className="testimonial-content">
                                       <img src="assets/images/testimonial/testimonial1.jpg" alt="testimonial1"/>							
@@ -569,7 +507,7 @@ function Home() {
                                   <p>Chris mikaale -<span> Happy Customer</span></p>
                               </div>
                           </div>
-                          <div className="col-md-12">	
+                          <div className="col-md-6">	
                               <div className="testimonial-block">
                                   <div className="testimonial-content">
                                       <img src="assets/images/testimonial/testimonial2.jpg" alt="testimonial1"/>							

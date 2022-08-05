@@ -1,8 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home';
-import {$} from "react-jquery-plugin"
+import {$} from "jquery"
+import {owlCarousel} from "owl.carousel"
 import { useEffect } from 'react';
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Register from './Pages/Register';
+import Login from './Pages/Login/Login';
+import AdminDashboard from './Pages/Admin/AdminDashboard';
+
 
 function App() {
 	useEffect(() => {
@@ -442,20 +448,6 @@ function App() {
 			});
 		}
 		
-		/* -- Accessories Section */
-		if( $(".accessories-section").length ){
-			$(".accessories-section").each(function ()
-			{
-				var $this = $(this);
-				var myVal = $(this).data("value");
-
-				$this.appear(function()
-				{		
-					$(".accessories-section .accessories-tab-box").addClass("animated fadeInRight");
-				});
-			});
-		}
-		
 		/* -- Whychoose Section */
 		if( $(".whychoose-section").length ){
 			$(".whychoose-section").each(function ()
@@ -569,8 +561,16 @@ function App() {
 		</div>
 	</div> */}
   {/* <!-- Header --> */}
-	<Home/>
- 
+  <BrowserRouter>
+      <Routes>
+			<Route path="/" element={<Home/>}/>
+			<Route path="/register" element={<Register/>}/>
+			<Route path="/login" element={<Login/>}/>
+			<Route path="/admindashboard" element={<AdminDashboard/>}/>
+			{/* <Route path="/" element={<Home/>}/> */}
+      </Routes>
+ </BrowserRouter>
+
   </>
   );
 }
